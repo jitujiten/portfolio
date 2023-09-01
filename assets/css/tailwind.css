@@ -1,0 +1,110 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://housejoy.b-cdn.net/font/GothamMedium.ttf'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+@font-face {
+  font-family: housejoyFont;
+  src: url("~/assets/font/GothamMedium.ttf");
+  src: url("~/assets/font/GothamBold.ttf");
+  src: url("~/assets/font/GothamBook.ttf");
+}
+ */
+
+
+body {
+  /* font-family: 'Mulish', sans-serif; */
+
+  /* font-family: 'Gotham' sans-serif; */
+  @apply bg-white text-slate-800;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.container {
+  @apply w-full max-w-screen-2xl p-5 mx-auto;
+}
+
+.input {
+  @apply space-y-1;
+}
+
+.input label {
+  @apply text-sm font-semibold;
+}
+
+.input .field {
+  @apply flex h-10 px-3 ring-1 ring-slate-200 focus:ring-2 focus:ring-primary rounded-lg transition duration-200 ease-in-out outline-none;
+}
+
+.input textarea.field {
+  @apply py-3 h-56;
+}
+
+.btn {
+  @apply flex items-center justify-center gap-2 h-10 px-5 bg-white font-bold select-none rounded-lg shadow-md disabled:hover:shadow-none disabled:bg-opacity-70 transition duration-200 ease-in-out;
+}
+
+.btn.sm {
+  @apply text-sm;
+}
+
+.btn.link {
+  @apply shadow-none hover:shadow-none bg-primary/5 text-primary font-semibold;
+}
+
+.btn-lg {
+  @apply px-8 h-10;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  @apply bg-opacity-70 outline-none shadow-xl;
+}
+
+.btn-primary {
+  @apply bg-primary text-white;
+}
+.btn-new-primary {
+  @apply bg-[#A0262A] text-white;
+}
+
+.btn-yellow {
+  @apply bg-[#FFC24C];
+}
+
+.link:not(.btn) {
+  @apply text-primary hover:underline;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-include::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f0f0;
+  border-radius: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f54444;
+  border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fa1414;
+}
