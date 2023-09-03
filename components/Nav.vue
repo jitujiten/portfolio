@@ -16,14 +16,14 @@
     </div>
     <ul class="nav-links" :class="{ open: isMenuOpen }">
       <li :class="{ fade: isMenuOpen }">
-        <nuxt-link to="/home" class="navLink">Home</nuxt-link>
+        <nuxt-link to="/" class="navLink">Home</nuxt-link>
       </li>
       <li :class="{ fade: isMenuOpen }">
-        <nuxt-link to="/realty" class="navLink">About Me</nuxt-link>
+        <nuxt-link to="/about" class="navLink">About Me</nuxt-link>
       </li>
 
       <li :class="{ fade: isMenuOpen }">
-        <nuxt-link to="/construction" class="navLink">Contact us</nuxt-link>
+        <nuxt-link to="/contact" class="navLink">Contact us</nuxt-link>
       </li>
     </ul>
     <div
