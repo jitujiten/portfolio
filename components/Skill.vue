@@ -252,7 +252,7 @@
 </template>
 
 <style>
-@media screen and (width: 375px) and (height: 667px) {
+@media screen and (max-width: 375px){
     .custom-size {
         margin-left: -10px;
     }
