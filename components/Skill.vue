@@ -9,7 +9,7 @@
             </h1>
           </div>
           <div
-            class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-12 md:gap-8 sm:gap-8 container"
+            class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-12 md:gap-8 sm:gap-8 container custom-size"
           >
             <div class="bg-black w-80 h-60 flip-card rounded-2xl">
               <div class="flip-card-inner w-full h-full bg-black rounded-2xl">
@@ -252,6 +252,11 @@
 </template>
 
 <style>
+@media screen and (width: 375px) and (height: 667px) {
+    .custom-size {
+        margin-left: -10px;
+    }
+}
 .flip-card {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }

@@ -70,8 +70,7 @@ h2 {
 
 h2.hovered {
   color: #fff;
-  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
+  text-shadow:1px 2px 20px  #03e9f4;
 }
 
 .light-icon-button {
@@ -80,10 +79,10 @@ h2.hovered {
   background-color: black;
   color: #fff;
 }
-.light-icon-button:hover {
+/* .light-icon-button:hover {
   text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 100px #03e9f4;
-}
+} */
 .glow-on-hover {
   width: 220px;
   height: 50px;
