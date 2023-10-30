@@ -23,7 +23,7 @@
           <span
             v-if="!isNameValid"
             class="text-sm md:text-xl text-red-600 ml-5 mt-1"
-            >Name is required.</span
+            >Name is required .</span
           >
         </div>
 
